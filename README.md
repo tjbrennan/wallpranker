@@ -1,1 +1,1 @@
-`curl https://tjbrennan.github.io/wallpranker | sh`
+`curl https://tjbrennan.github.io/wallpranker/ | sh`

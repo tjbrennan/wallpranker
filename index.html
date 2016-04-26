@@ -18,7 +18,7 @@ function wallpaper_linux () {
   gsettings set org.gnome.desktop.background picture-uri file://"$1";
 }
 
-wget -q -O "$tmpfile" "$url"
+wget -q -O "$tmpfile" "$url" || curl -s -o "$tmpfile" "$url" || exit 1
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   wallpaper_osx "$tmpfile"
